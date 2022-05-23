@@ -1,0 +1,71 @@
+* ::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper-slide img {
+    max-height: 100%;
+}
+
+ion-toolbar {
+    --opacity: 0;
+}
+
+.product-slider-item{
+    width: 130px;
+    font-family: Roboto Condensed;
+    text-overflow:inherit;
+    
+}
+
+hr {
+    
+    height: 1px;
+    border: 0;
+    background-color: rgb(184, 184, 184);
+    width: 290px !important;
+    
+    font-size: 2em !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+.padding{
+    padding-top: 90px;
+}
+.prod-dest{
+    border: 1px solid #be1958;
+    width: 400px;
+}
+
+.prod-dest-titulo{
+    font-family: Roboto Condensed;
+    padding-left: 15px !important;
+}
+
+.carrito-header{
+    display:block;
+    margin-top: 16px;
+    position: relative;
+    left: 10px;
+    
+}
+
+.img-header{
+    display:block;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+#horizontalScrollContainer {
+    p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        max-width: 200px;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 5px;
+    }
+}
+

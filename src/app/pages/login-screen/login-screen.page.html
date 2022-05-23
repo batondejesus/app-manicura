@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar sesión</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="imagen" src="https://www.manicura24.es/templates/PUBLIC/img/logo.png">
+  <form>    
+
+    <!-- EMAIL/ -->
+    <ion-item lines="full">
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-input type="text" placeholder="Email" #email required></ion-input>
+    </ion-item> 
+
+    <!-- PASSWORD -->
+    <ion-item lines="full">
+      <ion-icon name="lock-closed"></ion-icon>
+      <ion-input type="password" placeholder="Contraseña" #password required></ion-input>
+    </ion-item>
+    
+    <ion-button class="ion-margin-top" type="submit" (click)="logIn(email, password)" expand="block">Iniciar sesión</ion-button>
+      
+  </form>
+</ion-content>

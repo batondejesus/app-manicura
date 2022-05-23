@@ -1,0 +1,28 @@
+.carrito-header{
+    display:block;
+    margin-top: 16px;
+    position: relative;
+    left: 10px;
+    
+}
+
+.img-header{
+    display:block;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.search_product_description {
+    display: -webkit-box !important;
+    max-height: 66px !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    margin-bottom: 10px !important;
+}
+
+.search_product_img {
+    max-width: 200px !important;
+}

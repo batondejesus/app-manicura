@@ -1,0 +1,68 @@
+<ion-header >
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="10">
+            <img class="img-header" src="https://www.manicura24.es/templates/PUBLIC/img/logo.png">
+          </ion-col>
+          <ion-col>
+            <a class="carrito-header" href="../carrito/carrito.html"><img width="30px"  src="https://www.pinclipart.com/picdir/big/574-5746854_procurement-department-icon-shopping-cart-outline-png-clipart.png"></a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <!-- HERE STARTS THE FIRST SLIDE -->
+  <ion-slides pager="true">
+    <ion-slide>
+      <img
+        src="https://www.manicura24.es/tmp/images/BIBLIOTECA_ITEMS_10159_PRIMAVERA_W_2500_Q_100.JPG"
+      />
+    </ion-slide>
+    <ion-slide>
+      <img
+        src="https://www.manicura24.es/tmp/images/BIBLIOTECA_ITEMS_124620_BANNER_FRANCESA_W_2500_Q_100.JPG"
+      />
+    </ion-slide>
+    <ion-slide>
+      <img
+        src="https://www.manicura24.es/tmp/images/BIBLIOTECA_ITEMS_10158_NUEVA_IMAGEN_W_2500_Q_100.JPG"
+      />
+    </ion-slide>
+  </ion-slides>
+
+
+  <!-- HERE STARTS THE PRODUCT SLIDER -->
+  <p class="prod-dest-titulo" style="margin: 40px 0 -10px 0;">Productos destacados</p>
+  <hr>
+
+  <!-- HORIZONTAL SCROLL -->
+  <div id="horizontalScrollContainer">
+    <ion-grid fixed class="padding-0" >
+      <ion-row>
+        <ion-col class="padding-0">
+
+          <!-- PRODUCTS -->
+          <ion-segment scrollable>
+
+            <ion-segment-button *ngFor="let product of products">
+              <div class="product-slider-item">
+                <img src="{{ product.image }}" alt="">
+                <p>{{ product.name }}</p>
+              </div>
+            </ion-segment-button>
+
+          </ion-segment>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  
+
+</ion-content>
